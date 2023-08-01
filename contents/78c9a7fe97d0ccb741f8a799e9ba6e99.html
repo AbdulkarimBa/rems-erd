@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>organization_details</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+<script type="text/javascript" src="../assets/js/imageMapResizer.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>organization_details</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-ERDEntity"></span>
+          ERDEntity
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>REMS</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='0d0eccc62ee423c531c7bd69df161e4a.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Main Model</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='78c9a7fe97d0ccb741f8a799e9ba6e99.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>organization_details</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>(contact<em>type, contact</em>id) is a unique key</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+      <section>
+        <h3>Columns</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="20%">Name</th>
+            <th width="20%">Type</th>
+            <th width="10%">Primary Key</th>
+            <th width="10%">Foreign Key</th>
+            <th width="20%">Reference To</th>
+            <th width="10%">Nullable</th>
+            <th width="10%">Unique</th>
+          </tr>
+          
+          <tr>
+            <td><a href="57ca3e605a6842030e2416e27bccba87.html">id</a></td>
+            <td>INTEGER(32)</td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="6b0a72d413690cc5ca6439b4ca32c786.html">organization_id</a></td>
+            <td>INTEGER(32)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='22b5eb3d4bc046e572c045781caa56c2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>organization</a> ::
+              
+              <a href='2b47aaf29f9e55ed3ba93483f0cadfd6.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="16054bb11302a2e5ce92709e7bc9e425.html">contact_type_id</a></td>
+            <td>INTEGER(8)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='edbbd59d381b8e664182581e902e36dd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contact_type</a> ::
+              
+              <a href='12be56b5a97622ee1117a886a0556f42.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="bd7e9ca597f1eaee5bbe96edb854ef48.html">value</a></td>
+            <td>VARCHAR(256)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="1e90e0f02a1fe0685fd9bd01f966618e.html">created_at</a></td>
+            <td>DATE</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="6367b2187907330caa4a056e834750ae.html">updated_at</a></td>
+            <td>DATE</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+      <section>
+        <h3>Related Entities</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="25%">Entity</th>
+            <th width="25%">Cardinality</th>
+            <th width="25%">Reference Name</th>
+            <th width="25%">Relationship</th>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='22b5eb3d4bc046e572c045781caa56c2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>organization</a></td>
+            <td>0..*</td>
+            <td></td>
+            <td><a href='f82270d79d590b59ede0305e3700cfae.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(organization—organization_details)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='22b5eb3d4bc046e572c045781caa56c2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>organization</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='063afeb0885c9deca990a84a596f8f53.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>organization_organization_info (organization—organization_details)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='edbbd59d381b8e664182581e902e36dd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>contact_type</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='7d9661d4f803bcf6f67330308afbf19b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contact_type_organization_details (contact_type—organization_details)</a></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>organization_details</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='f82270d79d590b59ede0305e3700cfae.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(organization—organization_details)</a></li>
+        
+        <li><a href='063afeb0885c9deca990a84a596f8f53.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>organization_organization_info (organization—organization_details)</a></li>
+        
+        <li><a href='7d9661d4f803bcf6f67330308afbf19b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contact_type_organization_details (contact_type—organization_details)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+
+
+      <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
+      <script>
+      imageMapResize();
+      </script>
+    </div>
+  </body>
+</html>
