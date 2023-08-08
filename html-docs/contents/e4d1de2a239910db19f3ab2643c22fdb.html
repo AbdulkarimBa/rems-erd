@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>user_reporting_to</title>
+    <title>property_manager_id</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>user_reporting_to</h1>
+      <h1>property_manager_id</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-ERDRelationship"></span>
-          ERDRelationship
+          <span class="node-icon staruml-icon icon-ERDColumn"></span>
+          ERDColumn
         </span>
         
       </section>
@@ -41,13 +41,13 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>REMS</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='0d0eccc62ee423c531c7bd69df161e4a.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Main Model</a></span>
+          <span class="label label-info"><a href='6d157745337818cdfc17c1711b0e3173.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Properties Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a></span>
+          <span class="label label-info"><a href='c98cb24e720f5eec55922577c624862c.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>properties</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='33911cd7913eab4b6d1f7b838ae5d89b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_reporting_to (user—user)</a></span>
+          <span class="label label-info"><a href='e4d1de2a239910db19f3ab2643c22fdb.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>property_manager_id</a></span>
         
       </section>
 
@@ -78,111 +78,6 @@
 
       <!-- Undirected Relationship -->
 
-      
-      <section class="element-list">
-        <table width="100%">
-          <tr>
-            <td width="50%" style="padding-right: 1em">
-              <h3>End1</h3>
-              
-              <table class="table table-striped table-bordered">
-    <tr>
-        <th width="50%">Name</th>
-        <th width="50%">Value</th>
-    </tr>
-    
-    
-    
-    
-    
-    
-    
-    <tr>
-        <td>name</td>
-        <td></td>
-    </tr>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <tr>
-        <td>reference</td>
-        <td><a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>cardinality</td>
-        <td>1</td>
-    </tr>
-    
-    
-    
-</table>                
-
-            </td>
-            <td width="50%" style="padding-right: 1em">
-              <h3>End2</h3>
-              
-              <table class="table table-striped table-bordered">
-    <tr>
-        <th width="50%">Name</th>
-        <th width="50%">Value</th>
-    </tr>
-    
-    
-    
-    
-    
-    
-    
-    <tr>
-        <td>name</td>
-        <td></td>
-    </tr>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <tr>
-        <td>reference</td>
-        <td><a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>cardinality</td>
-        <td>0..1</td>
-    </tr>
-    
-    
-    
-</table>                
-
-            </td>
-          </tr>
-        </table>
-      </section>
       
 
       <!-- Classifier -->
@@ -321,7 +216,7 @@
     
     <tr>
         <td>name</td>
-        <td>user_reporting_to</td>
+        <td>property_manager_id</td>
     </tr>
     
     
@@ -334,13 +229,63 @@
     
     
     
+    <tr>
+        <td>type</td>
+        <td>INTEGER</td>
+    </tr>
+    
     
     
     
     
     <tr>
-        <td>identifying</td>
+        <td>length</td>
+        <td>64</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>primaryKey</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>foreignKey</td>
         <td><span class='label label-info'>true</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>referenceTo</td>
+        <td><a href='4e0132db5cceafd04853a72ca9bfd5bc.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>nullable</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>unique</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     

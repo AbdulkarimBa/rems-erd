@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>user</title>
+    <title>property_types</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>user</h1>
+      <h1>property_types</h1>
 
       <!-- Type and Stereotype -->
 
@@ -41,10 +41,10 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>REMS</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='0d0eccc62ee423c531c7bd69df161e4a.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Main Model</a></span>
+          <span class="label label-info"><a href='6d157745337818cdfc17c1711b0e3173.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Properties Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a></span>
+          <span class="label label-info"><a href='196f8e0098b82cdc9f8fe5e68f6dcbc5.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>property_types</a></span>
         
       </section>
 
@@ -196,9 +196,22 @@
           </tr>
           
           <tr>
-            <td><a href="aaa6b32c4e5dce7dd667af6c6663ddb7.html">id</a></td>
-            <td>INTEGER(64)</td>
+            <td><a href="dc63da408b5c05e13a8df97cfaa099a6.html">id</a></td>
+            <td>INTEGER(32)</td>
             <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="acab6c01973c400f01739a4985a1d112.html">type</a></td>
+            <td>VARCHAR</td>
+            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
               
@@ -209,17 +222,41 @@
           </tr>
           
           <tr>
-            <td><a href="6aaa2d86b7d029b13b716c976669a102.html">reporting_to</a></td>
-            <td>INTEGER(64)</td>
+            <td><a href="4eea74bc99680f95e7d80ed5cada5522.html">created_at</a></td>
+            <td>DATE</td>
             <td><span class='label label-info'>false</span></td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
             <td>
               
-                <a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a> ::
-              
-              <a href='aaa6b32c4e5dce7dd667af6c6663ddb7.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+              <span class='label label-info'>null</span>
             </td>
-            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="78688597b7e8b14abfe18e89afeb171a.html">updated_at</a></td>
+            <td>DATE</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="77e14ef416ce2cd2c6c6ee9328c0d4b3.html">deleted_at</a></td>
+            <td>DATE</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
           </tr>
           
@@ -243,42 +280,10 @@
           
           
           <tr>
-            <td><a href='6a270bf1c456e3978918e73e058e7998.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user_group</a></td>
-            <td>1..*</td>
+            <td><a href='c98cb24e720f5eec55922577c624862c.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>properties</a></td>
+            <td>0..*</td>
             <td></td>
-            <td><a href='87dd933068e7b4323d12d8935bed9fc6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_group (user—user_group)</a></td>
-          </tr>
-          
-          
-          <tr>
-            <td><a href='c3c8f9b7eafe4d8e51c6dfefe75e15fd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user_relationships</a></td>
-            <td>1</td>
-            <td></td>
-            <td><a href='ab286f72b0b57deeb1871d0923df6446.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_subordinate (user—user_relationships)</a></td>
-          </tr>
-          
-          
-          <tr>
-            <td><a href='c3c8f9b7eafe4d8e51c6dfefe75e15fd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user_relationships</a></td>
-            <td>1</td>
-            <td></td>
-            <td><a href='19f9809615c0dcd1385d411d9366a2d7.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(user—user_relationships)</a></td>
-          </tr>
-          
-          
-          <tr>
-            <td><a href='c3c8f9b7eafe4d8e51c6dfefe75e15fd.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user_relationships</a></td>
-            <td>1</td>
-            <td></td>
-            <td><a href='0594a1afb79db837bf184952825759cb.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_supervisor (user—user_relationships)</a></td>
-          </tr>
-          
-          
-          <tr>
-            <td><a href='2834010f983188aea7ecf5c4ad97a5b0.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>user</a></td>
-            <td>0..1</td>
-            <td></td>
-            <td><a href='33911cd7913eab4b6d1f7b838ae5d89b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_reporting_to (user—user)</a></td>
+            <td><a href='0b465233593f74f97450ea04f842d95c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>property_property_type (property_types—properties)</a></td>
           </tr>
           
         </table>                
@@ -312,7 +317,7 @@
     
     <tr>
         <td>name</td>
-        <td>user</td>
+        <td>property_types</td>
     </tr>
     
     
@@ -345,15 +350,7 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='87dd933068e7b4323d12d8935bed9fc6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_group (user—user_group)</a></li>
-        
-        <li><a href='ab286f72b0b57deeb1871d0923df6446.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_subordinate (user—user_relationships)</a></li>
-        
-        <li><a href='19f9809615c0dcd1385d411d9366a2d7.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(user—user_relationships)</a></li>
-        
-        <li><a href='0594a1afb79db837bf184952825759cb.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_supervisor (user—user_relationships)</a></li>
-        
-        <li><a href='33911cd7913eab4b6d1f7b838ae5d89b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_reporting_to (user—user)</a></li>
+        <li><a href='0b465233593f74f97450ea04f842d95c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>property_property_type (property_types—properties)</a></li>
         
     </ul>
 </section>
@@ -364,23 +361,6 @@
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='87dd933068e7b4323d12d8935bed9fc6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_group (user—user_group)</a></li>
-        
-        <li><a href='ab286f72b0b57deeb1871d0923df6446.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_subordinate (user—user_relationships)</a></li>
-        
-        <li><a href='19f9809615c0dcd1385d411d9366a2d7.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(user—user_relationships)</a></li>
-        
-        <li><a href='0594a1afb79db837bf184952825759cb.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_user_relationship_supervisor (user—user_relationships)</a></li>
-        
-        <li><a href='33911cd7913eab4b6d1f7b838ae5d89b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>user_reporting_to (user—user)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
