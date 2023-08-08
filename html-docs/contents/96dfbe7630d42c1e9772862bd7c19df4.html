@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>cities</title>
+    <title>states</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>cities</h1>
+      <h1>states</h1>
 
       <!-- Type and Stereotype -->
 
@@ -44,7 +44,7 @@
           <span class="label label-info"><a href='6d157745337818cdfc17c1711b0e3173.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Properties Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='fc7a4b8aa32bb7cf5f309f16bf4f7fec.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>cities</a></span>
+          <span class="label label-info"><a href='96dfbe7630d42c1e9772862bd7c19df4.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>states</a></span>
         
       </section>
 
@@ -196,8 +196,8 @@
           </tr>
           
           <tr>
-            <td><a href="e3f1081d55e15f434311e8d91a080875.html">id</a></td>
-            <td>INTEGER(32)</td>
+            <td><a href="fc9c11a09488ace45b8a6851b4222746.html">id</a></td>
+            <td>INTEGER(16)</td>
             <td><span class='label label-info'>true</span></td>
             <td><span class='label label-info'>false</span></td>
             <td>
@@ -209,7 +209,7 @@
           </tr>
           
           <tr>
-            <td><a href="1f2d642ff4b931464fcb71815da0fd60.html">name</a></td>
+            <td><a href="c7f999affff0b058de006b4895526b2e.html">name</a></td>
             <td>VARCHAR(64)</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -222,15 +222,13 @@
           </tr>
           
           <tr>
-            <td><a href="d3402ba9a04c6f76a7fd7b2e1c125df2.html">state_id</a></td>
+            <td><a href="b2d9c063d311626a35b66f96acc765bb.html">country_id</a></td>
             <td>INTEGER(16)</td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>true</span></td>
             <td>
               
-                <a href='46ed8a1da83f1cdd8c1771b1c31e8348.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>state</a> ::
-              
-              <a href='9295aaae36618fdf2457ee82af5d38c7.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+              <span class='label label-info'>null</span>
             </td>
             <td><span class='label label-info'>false</span></td>
             <td><span class='label label-info'>false</span></td>
@@ -256,18 +254,26 @@
           
           
           <tr>
-            <td><a href='9d6f1191e605b9ef4a3b395e29600459.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>adresses</a></td>
-            <td>0..*</td>
+            <td><a href='54133d101bab6a0f66111a68469a0064.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>country</a></td>
+            <td>1</td>
             <td></td>
-            <td><a href='c1121811832f86f66a5bcb878e9a471c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>address_city (cities—adresses)</a></td>
+            <td><a href='84cdecef6190a756fe169a0b5465553d.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>country_state (country—states)</a></td>
           </tr>
           
           
           <tr>
-            <td><a href='96dfbe7630d42c1e9772862bd7c19df4.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>states</a></td>
-            <td>1</td>
+            <td><a href='fc7a4b8aa32bb7cf5f309f16bf4f7fec.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>cities</a></td>
+            <td>1..*</td>
             <td></td>
             <td><a href='3cd56397ad124e39d484087be8da9473.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>city_state (states—cities)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='54133d101bab6a0f66111a68469a0064.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>country</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='1303f34ec7ec505d15767ab38d390ccc.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>state_country (country—states)</a></td>
           </tr>
           
         </table>                
@@ -301,7 +307,7 @@
     
     <tr>
         <td>name</td>
-        <td>cities</td>
+        <td>states</td>
     </tr>
     
     
@@ -334,9 +340,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='c1121811832f86f66a5bcb878e9a471c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>address_city (cities—adresses)</a></li>
+        <li><a href='84cdecef6190a756fe169a0b5465553d.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>country_state (country—states)</a></li>
         
         <li><a href='3cd56397ad124e39d484087be8da9473.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>city_state (states—cities)</a></li>
+        
+        <li><a href='1303f34ec7ec505d15767ab38d390ccc.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>state_country (country—states)</a></li>
         
     </ul>
 </section>
@@ -351,7 +359,7 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='3cd56397ad124e39d484087be8da9473.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>city_state (states—cities)</a></li>
+        <li><a href='1303f34ec7ec505d15767ab38d390ccc.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>state_country (country—states)</a></li>
         
     </ul>
 </section>
